@@ -297,12 +297,12 @@ const PropertyFilterModal = ({
 															e
 														) => {
 															selectedCheck2
-																? setCheckMinPrice(
+																? setCheckMaxPrice(
 																		e
 																			.target
 																			.value
 																  )
-																: setCheckMinPrice(
+																: setCheckMaxPrice(
 																		''
 																  );
 														}}

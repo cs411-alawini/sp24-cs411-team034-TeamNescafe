@@ -52,11 +52,11 @@ export default function AgentDashboard() {
 									</Link>
 								</td>
 								<td className='border px-4 py-2 text-center'>
-									{/* <Link
-										href={`/property/${item.property_id}`}
-									> */}
+									<Link
+										href={`/property_detail/${item.property_id}`}
+									>
 									{item.property_name}
-									{/* </Link> */}
+									</Link>
 								</td>
 								<td className='border px-4 py-2 text-center'>
 									{item.num_applications}

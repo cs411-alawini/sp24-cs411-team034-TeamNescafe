@@ -29,11 +29,13 @@ const Roommates = () => {
     let filtered = roommates.filter((roommate) => {
       return (
         roommate.first_name.toLowerCase().includes(search.toLowerCase()) ||
-        roommate.last_name.toLowerCase().includes(search.toLowerCase())
+        roommate.last_name.toLowerCase().includes(search.toLowerCase()) ||
+        roommate.email_id.toLowerCase().includes(search.toLowerCase())
       );
     });
     setFilteredRoomates(filtered);
   }, [search]);
+
   return (
     <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
       <div className="flex items-center">
